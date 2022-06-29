@@ -226,7 +226,7 @@ body {
   transition: transform 0.3s; }
   .feature-box:hover {
     cursor: pointer;
-    transform: translateY(-1.5rem) scale(1.5rem); }
+    transform: translateY(-2rem) scale(1.05); }
   .feature-box__icon {
     display: inline-block;
     font-size: 6rem;
