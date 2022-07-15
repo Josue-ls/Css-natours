@@ -29,11 +29,14 @@
 
   &__img {
     height: 100%;
-    transform: translateX(-3rem);
+    transform: translateX(-4rem) scale(1.4);
+    transition: all 0.5s;
+    backface-visibility: hidden;
   }
 
   &__text {
     transform: skewX(12deg);
+    backface-visibility: hidden;
   }
 
   &__caption {
@@ -54,7 +57,7 @@
     transform: translate(-50%, -50%);
   }
   &:hover &__img {
-    opacity: 1;
-    transform: translateX(0rem);
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
