@@ -145,6 +145,9 @@ body {
   height: 50rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 5px; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
