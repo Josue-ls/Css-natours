@@ -433,7 +433,8 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
-  display: 100%; }
+  display: 100%;
+  transition: all 0.3s; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.5);
@@ -451,7 +452,7 @@ body {
   display: block;
   transition: all 0.3s; }
 
-.form__input:placeholder-shown + .form__label {
+.form__input:placeholder-shown ~ .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
