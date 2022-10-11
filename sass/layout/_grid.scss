@@ -1,5 +1,8 @@
 .row {
   max-width: $grid-width;
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
   // top and bottom = 0px | left and right = auto
   margin: 0 auto;
 
@@ -8,6 +11,14 @@
     // .row:last-child => get only the last child
     // .row:not(:last-child) => get all except last child
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -20,6 +31,15 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
